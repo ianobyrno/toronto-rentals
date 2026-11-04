@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import re
 from dataclasses import dataclass
-from datetime import date
+from datetime import date, timedelta
 
 from . import geo
 from .models import Listing
@@ -16,6 +16,7 @@ _DATE_PATTERNS = [
     re.compile(rf"\b{_MONTH_RE}\s+{_DAY_RE}\b(?!\s*(?:sq|ft|m2|min|\$))", re.I),   # Feb 1, February 1st
     re.compile(rf"\b{_DAY_RE}\s+(?:of\s+)?{_MONTH_RE}\b", re.I),                   # 1st of February
 ]
+_ISO_DATE = re.compile(r"\b(20\d\d)-(\d\d)-(\d\d)\b")
 _MONTH_ONLY = re.compile(rf"\bavail\w*\b[^.\n]{{0,25}}?\b(?:in |from |starting |as of |for )?{_MONTH_RE}\b(?!\s*\d)", re.I)
 _AVAIL_ANCHOR = re.compile(r"\b(?:avail\w*|move[- ]?in|possession|occupancy|starting|start date|from)\b", re.I)
 _NOW_RE = re.compile(r"\bavail\w*\s*(?:immediately|now|asap|right away|today)\b|\bimmediate (?:occupancy|move[- ]in|possession)\b|\bmove[- ]in ready\b", re.I)
@@ -68,6 +69,21 @@ class Criteria:
         self._score(l)
         return Decision(True)
 
+    def prefilter(self, l: Listing) -> Decision:
+        """Cheap checks on search-page data, to decide whether the full listing is worth fetching."""
+        flags = l.flags
+        l.flags = []
+        try:
+            if l.unit_type and "basement" in l.unit_type.lower():
+                return Decision(False, "basement (site field)")
+            for step in (self._price, self._bedrooms, self._location):
+                d = step(l)
+                if d is not None and not d.keep:
+                    return d
+            return Decision(True)
+        finally:
+            l.flags = flags
+
     # ---------------------------------------------------------------- steps
     def _price(self, l: Listing) -> Decision | None:
         if l.price is None:
@@ -106,9 +122,7 @@ class Criteria:
                 l.flags.append("near boundary — check location")
             for name, poly, _ in self.zones:
                 if geo.contains(poly, p):
-                    if geo.distance_to_edge_m(poly, p) > self.buffer:
-                        return Decision(False, f"in {name}")
-                    l.flags.append(f"on the edge of {name} — check location")
+                    return Decision(False, f"in {name}")
                 elif geo.distance_to_edge_m(poly, p) <= self.buffer:
                     l.flags.append(f"next to {name} — check location")
             return None
@@ -149,22 +163,31 @@ class Criteria:
         return None
 
     def _move_in(self, l: Listing) -> Decision | None:
-        d = l.available
-        approx = False
+        today = date.today()
+        site = l.available
+        if site is not None and site < today - timedelta(days=60):
+            # Long-stale default left in the site's field — ignore it.
+            l.flags.append(f"site's move-in date ({site:%d %b %Y}) is stale — ignored")
+            site = None
+        text_d, approx, anchored = parse_available(l.available_text or "", self.year)
+        if text_d is None:
+            text_d, approx, anchored = parse_available(l.text, self.year)
+        # Landlords often leave the site's date field at its default; a date written next to
+        # "available"/"move-in" in the ad itself is more trustworthy.
+        if text_d is not None and (anchored or site is None):
+            d = text_d
+            if site is not None and site != text_d:
+                l.flags.append(f"ad says {text_d:%d %b}, site field says {site:%d %b}")
+        else:
+            d, approx = site, False
         if d is None:
-            d, approx = parse_available(l.available_text or "", self.year)
-        if d is None:
-            d, approx = parse_available(l.text, self.year)
-        if d is None:
-            l.tier = 3
             if _NOW_RE.search(l.text) or _NOW_RE.search(l.available_text or ""):
-                l.flags.append("says available now")
+                return Decision(False, "available now (too early)")
+            l.tier = 3
             return None
         jan1, feb1 = date(self.year, 1, 1), date(self.year, 2, 1)
-        if d.month == 2 and d.day == 1 or (approx and d.month == 2):
+        if (d.month, d.day) == (2, 1) or (approx and d.month == 2):
             l.tier = 1
-        elif d.month == 1 and (d.year == self.year or approx):
-            l.tier = 2
         elif d < jan1:
             return Decision(False, f"available {d:%d %b} (too early)")
         elif d > feb1:
@@ -207,14 +230,14 @@ def parse_bedrooms(text: str) -> str | None:
     return None
 
 
-def parse_available(text: str, year: int) -> tuple[date | None, bool]:
-    """Find the move-in date in free text. Returns (date, approximate?).
+def parse_available(text: str, year: int) -> tuple[date | None, bool, bool]:
+    """Find the move-in date in free text. Returns (date, approximate?, anchored?).
 
     Prefers a date that follows an 'available'/'move-in' anchor; falls back to the first date
     mentioned. Month-only mentions ("available in February") return the 1st with approx=True.
     """
     if not text:
-        return None, False
+        return None, False, False
     candidates: list[tuple[int, date]] = []
     for rx in _DATE_PATTERNS:
         for m in rx.finditer(text):
@@ -230,12 +253,19 @@ def parse_available(text: str, year: int) -> tuple[date | None, bool]:
                 continue
             anchored = bool(_AVAIL_ANCHOR.search(text[max(0, m.start() - 40):m.start()]))
             candidates.append((0 if anchored else 1, m.start(), d))
+    for m in _ISO_DATE.finditer(text):
+        try:
+            d = date(int(m.group(1)), int(m.group(2)), int(m.group(3)))
+        except ValueError:
+            continue
+        anchored = bool(_AVAIL_ANCHOR.search(text[max(0, m.start() - 40):m.start()]))
+        candidates.append((0 if anchored else 1, m.start(), d))
     if candidates:
         candidates.sort()
-        return candidates[0][2], False
+        return candidates[0][2], False, candidates[0][0] == 0
     m = _MONTH_ONLY.search(text)
     if m:
         mnum = MONTHS[m.group(1)[:3].lower()]
         y = year if mnum <= 6 else year - 1
-        return date(y, mnum, 1), True
-    return None, False
+        return date(y, mnum, 1), True, True
+    return None, False, False

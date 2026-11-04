@@ -16,6 +16,7 @@ LESLIEVILLE = (43.6625, -79.3330)        # Queen E & Jones
 TRINITY_BELLWOODS = (43.6480, -79.4140)
 ANNEX = (43.6700, -79.4050)              # Bloor & Spadina-ish, north of Bloor
 QUEENS_QUAY = (43.6395, -79.3810)
+BATHURST_QUAY = (43.6345, -79.3985)
 LIBERTY_VILLAGE = (43.6385, -79.4200)
 FIN_DISTRICT = (43.6485, -79.3815)       # King & Bay
 ST_JAMES_TOWN = (43.6690, -79.3735)
@@ -42,7 +43,7 @@ def keep(**kw):
     return C.evaluate(l).keep, l
 
 
-@pytest.mark.parametrize("pt", [LESLIEVILLE, TRINITY_BELLWOODS, ANNEX, QUEENS_QUAY, CABBAGETOWN])
+@pytest.mark.parametrize("pt", [LESLIEVILLE, TRINITY_BELLWOODS, ANNEX, QUEENS_QUAY, BATHURST_QUAY, CABBAGETOWN])
 def test_in_area(pt):
     ok, _ = keep(at=pt)
     assert ok
@@ -64,7 +65,7 @@ def test_no_coords_excluded_by_name_in_title_only():
 @pytest.mark.parametrize("text", [
     "Basement apartment, separate entrance", "Bright lower level unit", "Walk-out basement",
     "Room for rent in shared house", "Looking for a roommate", "Female only please",
-    "Ideal for students", "Short-term rental", "6 month lease", "Fully furnished 1 bed",
+    "Students only", "Short-term rental", "6 month lease", "Fully furnished 1 bed",
     "Partially furnished", "Shared kitchen and bathroom"])
 def test_excluded_text(text):
     assert not keep(description=f"{text}. Available Feb 1.")[0], text
@@ -72,7 +73,8 @@ def test_excluded_text(text):
 
 @pytest.mark.parametrize("text", [
     "Unfurnished. Walk out to balcony.", "Shared laundry in building", "No students please",
-    "Shared backyard", "Furnished or unfurnished available", "Lower Bay St views"])
+    "Shared backyard", "Furnished or unfurnished available", "Lower Bay St views",
+    "Ideal for students and professionals", "Suited for shared living arrangements"])
 def test_not_excluded_text(text):
     assert keep(description=f"{text}. Available Feb 1.")[0], text
 
@@ -91,25 +93,52 @@ def test_site_basement_field():
 @pytest.mark.parametrize("text,tier", [
     ("Available Feb 1st", 1), ("Available February 1, 2027", 1), ("Move in 1st of February", 1),
     ("Available in February", 1), ("Available Jan 15", 2), ("Available January 1st", 2),
-    ("Lovely place", 3), ("Available immediately", 3)])
+    ("Lovely place", 3)])
 def test_tiers(text, tier):
     ok, l = keep(description=text)
     assert ok and l.tier == tier, (text, l.tier)
 
 
-@pytest.mark.parametrize("text", ["Available Dec 1", "Available March 1", "Available Feb 15"])
+@pytest.mark.parametrize("text", ["Available Dec 1", "Available March 1", "Available Feb 15",
+                                  "Available immediately"])
 def test_bad_dates_dropped(text):
     assert not keep(description=text)[0]
 
 
 def test_anchor_preferred_over_other_dates():
-    d, _ = parse_available("Built Dec 2019. Open house Nov 9. Available Feb 1.", 2027)
+    d, _, anchored = parse_available("Built Dec 2019. Open house Nov 9. Available Feb 1.", 2027)
+    assert anchored
     assert d == date(2027, 2, 1)
 
 
-def test_structured_date_wins():
+def test_structured_date_used_when_ad_has_no_anchored_date():
     ok, l = keep(available=date(2027, 2, 1), description="Unfurnished, lease ends Jan 5")
     assert ok and l.tier == 1
+
+
+def test_anchored_ad_date_beats_default_site_date():
+    ok, l = keep(available=date(2026, 12, 1), description="Available Feb 1st.")
+    assert ok and l.tier == 1
+
+
+def test_stale_site_date_ignored():
+    ok, l = keep(available=date(2024, 2, 1), description="Nice unit.")
+    assert ok and l.tier == 3 and any("stale" in f for f in l.flags)
+
+
+def test_recent_past_site_date_means_available_now():
+    from datetime import timedelta
+    assert not keep(available=date.today() - timedelta(days=2), description="Nice unit.")[0]
+
+
+def test_iso_date_in_text():
+    ok, l = keep(description="- available 2027-01-15 for $2000")
+    assert ok and l.tier == 2
+
+
+def test_excluded_zones_are_strict():
+    assert not keep(at=(43.6715, -79.3830))[0]       # 85 Bloor St E, right on the zone edge
+    assert not keep(at=(43.6390, -79.4150))[0]       # Western Battery Rd
 
 
 def test_ranking():

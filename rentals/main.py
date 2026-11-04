@@ -29,19 +29,34 @@ def seen_key(l: Listing) -> str:
     return f"{l.key}@{l.price}"
 
 
-def process(listings: list[Listing], state: State, crit: Criteria) -> tuple[list[Listing], collections.Counter]:
+def _reason(d) -> str:
+    return "over budget" if d.reason.startswith("price") else d.reason.split(":")[0].split(" (")[0]
+
+
+def process(listings: list[Listing], state: State, crit: Criteria,
+            enrichers: dict | None = None) -> tuple[list[Listing], collections.Counter]:
     reasons: collections.Counter = collections.Counter()
+    enrichers = enrichers or {}
     fresh = []
     for l in listings:
         k = seen_key(l)
         if k in state.seen:
             continue
+        d = crit.prefilter(l)
+        if d.keep and l.source in enrichers:
+            try:
+                enrichers[l.source](l)
+            except Exception as e:  # keep the search-page data; don't mark seen so it's retried
+                print(f"enrich failed for {l.url}: {e}")
+                reasons["enrich failed (will retry)"] += 1
+                continue
         state.seen[k] = now()
-        d = crit.evaluate(l)
+        if d.keep:
+            d = crit.evaluate(l)
         if d.keep:
             fresh.append(l)
         else:
-            reasons[d.reason.split(":")[0].split(" (")[0] if not d.reason.startswith("price") else "over budget"] += 1
+            reasons[_reason(d)] += 1
     fresh = dedupe(fresh)
     # Drop units already queued (or already sent recently) under another site/listing id.
     out = []
@@ -66,7 +81,10 @@ def main() -> None:
     state = State()
 
     listings: list[Listing] = []
+    enrichers = {}
     for mod in sources.load():
+        if hasattr(mod, "enrich"):
+            enrichers[mod.NAME] = mod.enrich
         h = state.health.setdefault(mod.NAME, {})
         try:
             got = mod.fetch()
@@ -79,7 +97,7 @@ def main() -> None:
             h.update(last_error=f"{now()} {type(e).__name__}: {e}"[:300], last_count=0)
             print(f"{mod.NAME}: FAILED\n{traceback.format_exc()}")
 
-    new, reasons = process(listings, state, crit)
+    new, reasons = process(listings, state, crit, enrichers)
     state.pending.extend(new)
     print(f"{len(new)} new matches queued; {len(state.pending)} pending. Rejected: {dict(reasons)}")
 
