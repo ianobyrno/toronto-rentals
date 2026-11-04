@@ -1,0 +1,105 @@
+# Toronto rental watcher — search criteria.
+# Coordinates are [lat, lon]. Polygons are approximate (~100 m) hand-traced street
+# lines; listings within `edge_buffer_m` of any boundary are kept but flagged.
+
+budget:
+  max_rent: 2300
+  scam_flag_below: 1500        # listed below this → flagged as likely scam, not dropped
+
+move_in:
+  year: 2027
+  # tier 1 = Feb 1, tier 2 = any day in January, tier 3 = no date / "now" / flexible.
+  # Anything dated before Jan 1 or after Feb 1 is dropped.
+
+bedrooms:
+  allowed: [studio, "1", "1+den", "2"]    # studios/bachelors/lofts of any size included
+  preferred: ["1+den", "2"]
+
+area:
+  edge_buffer_m: 150
+  boundary:
+    name: "Dupont/Bloor-Danforth – Lake – Dufferin – Coxwell"
+    polygon:
+      - [43.6674, -79.4387]   # Dufferin & Dupont
+      - [43.6750, -79.4070]   # Dupont & Spadina
+      - [43.6765, -79.3985]   # Dupont & Avenue Rd
+      - [43.6745, -79.3885]   # Yonge & Davenport
+      - [43.6710, -79.3867]   # Yonge & Bloor
+      - [43.6722, -79.3765]   # Bloor & Sherbourne
+      - [43.6735, -79.3685]   # Bloor & Parliament / Castle Frank
+      - [43.6770, -79.3585]   # Danforth & Broadview (across the Viaduct)
+      - [43.6797, -79.3450]   # Danforth & Pape
+      - [43.6842, -79.3230]   # Danforth & Coxwell
+      - [43.6735, -79.3196]   # Coxwell & Gerrard
+      - [43.6670, -79.3165]   # Coxwell & Queen
+      - [43.6635, -79.3150]   # Coxwell & Lake Shore
+      - [43.6570, -79.3420]   # Lake Shore E & Carlaw
+      - [43.6505, -79.3555]   # Lake Shore & Cherry
+      - [43.6450, -79.3600]   # waterfront (Queens Quay / Harbourfront included)
+      - [43.6410, -79.3700]
+      - [43.6370, -79.3850]
+      - [43.6350, -79.4000]
+      - [43.6330, -79.4260]   # Dufferin at the lake / Exhibition
+      - [43.6385, -79.4285]   # Dufferin & King
+      - [43.6425, -79.4297]   # Dufferin & Queen
+      - [43.6601, -79.4357]   # Dufferin & Bloor
+  exclude:
+    - name: Liberty Village
+      aliases: ["liberty village", "liberty st", "east liberty"]
+      polygon:
+        - [43.6386, -79.4290]   # King & Dufferin
+        - [43.6418, -79.4115]   # King & Strachan
+        - [43.6370, -79.4095]   # Strachan & rail corridor
+        - [43.6340, -79.4268]   # Dufferin & rail corridor
+    - name: Financial District
+      aliases: ["financial district", "financial core"]
+      polygon:
+        - [43.6507, -79.3868]   # Queen & University
+        - [43.6524, -79.3793]   # Queen & Yonge
+        - [43.6466, -79.3768]   # Front & Yonge
+        - [43.6448, -79.3845]   # Front & University
+    - name: Church-Wellesley / Bloor-Sherbourne / St James Town
+      aliases: ["church-wellesley", "church and wellesley", "church & wellesley",
+                "church/wellesley", "st james town", "st. james town", "st jamestown",
+                "bloor-sherbourne", "bloor and sherbourne", "bloor & sherbourne",
+                "bloor/sherbourne", "gay village"]
+      polygon:
+        - [43.6710, -79.3867]   # Yonge & Bloor
+        - [43.6727, -79.3708]   # Bloor & Parliament
+        - [43.6639, -79.3677]   # Parliament & Carlton
+        - [43.6612, -79.3830]   # Yonge & Carlton/College
+
+keywords:
+  # Regexes, case-insensitive, matched against title + description.
+  exclude:
+    basement: ['\bbasement\b', '\bbsmt\b', '\blower[- ]level\b', '\blower unit\b',
+               '\bwalk[- ]?out (?:basement|lower|unit|apartment|apt)\b',
+               '\bbelow[- ]grade\b', '\bsemi[- ]basement\b', '\bin[- ]law suite\b']
+    shared: ['\broom for rent\b', '\broom available\b', '\bprivate room\b',
+             '\bshared (?:accommodation|apartment|house|unit|kitchen|bath(?:room)?|washroom|living)\b',
+             '\bshare (?:the |a )?(?:unit|apartment|house|kitchen|bath(?:room)?|washroom)\b',
+             '\broom ?mates?\b', '\bhouse ?mates?\b', '\bco-?living\b']
+    female_only: ['\b(?:female|girl|lady|ladie|women|woman)s? only\b',
+                  '\bonly (?:female|girl|lady|ladie|women|woman)s?\b',
+                  '\b(?:female|girl|lady|women)s? preferred\b']
+    students: ['\bstudents? only\b', '\bstudent (?:housing|rental|residence)\b',
+               '\b(?:ideal|perfect|great|suitable) for (?:a )?students?\b', '\bfor students\b']
+    short_term: ['\bshort[- ]term\b', '\b(?:[1-9]|1[01])[- ]months? (?:lease|rental|term|only)\b',
+                 '\bmonthly rental only\b', '\bairbnb\b']
+  furnished: '(?<!un-)\bfurnished\b'
+  furnished_ok: ['\bunfurnished\b', '\bfurnished (?:or|/) ?unfurnished\b',
+                 '\bcan be (?:un)?furnished\b', '\bfurniture (?:is )?optional\b',
+                 '\bfurnished optional\b', '\boptionally furnished\b']
+  flag:
+    lease_takeover: ['\blease (?:takeover|assignment|transfer)\b', '\btake ?over (?:my|the|our) lease\b', '\bsublet\b', '\bsub-?lease\b']
+  boost:
+    house_unit: ['\b(?:town ?house|townhome|row ?house|semi[- ]detached|detached|duplex|triplex|fourplex|victorian|edwardian)\b',
+                 '\b(?:upper|main|second|2nd|third|3rd|top)[- ]floor\b', '\bupper (?:unit|level)\b',
+                 '\bmain level\b', '\bcoach ?house\b', '\blaneway (?:house|suite)\b', '\bgarden suite\b']
+    outdoor: ['\bbalcon(?:y|ies)\b', '\bterrace\b', '\bdeck\b', '\bpatio\b', '\bback ?yard\b',
+              '\bfront ?yard\b', '\byard\b', '\bgarden\b', '\brooftop\b', '\broof ?top\b', '\bporch\b',
+              '\boutdoor space\b']
+
+digest:
+  # Toronto is UTC-5 (EST) until 14 Mar 2027; the workflow cron is in UTC.
+  subject: "Toronto rentals — {n} new"
