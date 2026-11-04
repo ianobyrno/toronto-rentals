@@ -14,6 +14,7 @@ def norm_address(a: str | None) -> str | None:
     if not a:
         return None
     a = a.lower().split(",")[0]
+    a = re.sub(r"^\s*(?:[a-z0-9]+\s+)?-\s+", "", a)   # "1901 - 20 Edward St", "- 20 EDWARD STREET"
     a = re.sub(r"\b(?:unit|apt|suite|#)\s*\w+\b", " ", a)
     a = re.sub(r"[^\w\s]", " ", a)
     words = [_ABBR.get(w, w) for w in a.split()]
@@ -21,8 +22,22 @@ def norm_address(a: str | None) -> str | None:
     return " ".join(words) if words and words[0].isdigit() else None
 
 
+_UNIT = re.compile(r"^\s*([a-z]?\d+[a-z]?)\s+-\s+\d|\b(?:unit|apt|suite|#)\s*([a-z]?\d+[a-z]?)\b", re.I)
+
+
+def unit_of(l: Listing) -> str | None:
+    for s in (l.address, l.title):
+        m = _UNIT.search(s or "")
+        if m:
+            return (m.group(1) or m.group(2)).lower()
+    return None
+
+
 def same_unit(a: Listing, b: Listing) -> bool:
     if a.source == b.source:
+        return False
+    ua, ub = unit_of(a), unit_of(b)
+    if ua and ub and ua != ub:
         return False
     if a.price and b.price and abs(a.price - b.price) > 50:
         return False

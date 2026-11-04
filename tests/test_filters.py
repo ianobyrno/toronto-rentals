@@ -86,6 +86,19 @@ def test_over_budget_and_bedrooms():
     assert keep(title="1+den condo")[0]
 
 
+def test_lower_title_is_basement():
+    assert not keep(title="Lower - 147 Niagara Street")[0]
+
+
+def test_dedupe_unit_prefix_formats():
+    a = L(id="a", address="- 20 EDWARD STREET, Toronto (Bay St Corridor)", source="kijiji", url="https://kijiji.ca/a")
+    b = L(id="b", address="1901 - 20 Edward Street", source="condos.ca", url="https://condos.ca/b")
+    assert len(dedupe([a, b])) == 1
+    c = L(id="c", address="1706 - 55 Cooper Street", source="condos.ca", url="https://condos.ca/c", price=2250)
+    d = L(id="d", address="Unit 5207, 55 Cooper St", source="kijiji", url="https://kijiji.ca/d", price=2300)
+    assert len(dedupe([c, d])) == 2
+
+
 def test_site_basement_field():
     assert not keep(unit_type="Basement")[0]
 

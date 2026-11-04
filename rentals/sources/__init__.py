@@ -10,7 +10,7 @@ from __future__ import annotations
 import importlib
 
 # Filled in as each scraper is written against the live site.
-ENABLED: list[str] = ["kijiji"]
+ENABLED: list[str] = ["kijiji", "condos_ca"]
 
 
 def load():

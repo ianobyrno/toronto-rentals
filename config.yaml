@@ -75,7 +75,8 @@ keywords:
   exclude:
     basement: ['\bbasement\b', '\bbsmt\b', '\blower[- ]level\b', '\blower unit\b',
                '\bwalk[- ]?out (?:basement|lower|unit|apartment|apt)\b',
-               '\bbelow[- ]grade\b', '\bsemi[- ]basement\b', '\bin[- ]law suite\b']
+               '\bbelow[- ]grade\b', '\bsemi[- ]basement\b', '\bin[- ]law suite\b',
+               '^\s*(?:lower|bsmt|basement)\b']   # titles like "Lower - 147 Niagara St\"
     shared: ['\broom for rent\b', '\broom available\b', '\bprivate room\b',
              '\bshared (?:accommodation|apartment|house|unit|kitchen|bath(?:room)?|washroom|living (?:room|space|area))\b',
              '\bshare (?:the |a )?(?:unit|apartment|house|kitchen|bath(?:room)?|washroom)\b',

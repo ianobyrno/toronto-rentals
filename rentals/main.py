@@ -30,7 +30,12 @@ def seen_key(l: Listing) -> str:
 
 
 def _reason(d) -> str:
-    return "over budget" if d.reason.startswith("price") else d.reason.split(":")[0].split(" (")[0]
+    r = d.reason
+    if r.startswith("price"):
+        return "over budget"
+    if r.startswith("available"):
+        return "move-in too early" if "early" in r else "move-in too late"
+    return r.split(":")[0].split(" (")[0]
 
 
 def process(listings: list[Listing], state: State, crit: Criteria,
