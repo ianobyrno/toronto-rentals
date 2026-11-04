@@ -1,0 +1,27 @@
+name: probe
+# Dev helper: fetch URLs from GitHub's runners and return the raw responses as an artifact.
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: "Space-separated URLs"
+        required: true
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          mkdir out; i=0
+          for u in ${{ inputs.urls }}; do
+            i=$((i+1))
+            curl -sS -L -m 30 --compressed \
+              -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36" \
+              -H "Accept-Language: en-CA,en;q=0.9" -H "Accept: text/html,application/json;q=0.9,*/*;q=0.8" \
+              -D out/$i.headers -o out/$i.body -w "$i %{http_code} %{size_download} $u\n" "$u" >> out/index.txt || echo "$i ERR $u" >> out/index.txt
+          done
+          cat out/index.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: probe
+          path: out/
+          retention-days: 2
