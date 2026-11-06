@@ -3092,5 +3092,30 @@
   "title": "4006 - 33 Bay Street",
   "unit_type": "Condo Apartment",
   "url": "https://condos.ca/toronto/33-bay-at-pinnacle-centre-33-bay-st/unit-4006-C14156610"
+ },
+ {
+  "address": "1110 - 155 Yorkville Avenue",
+  "also_on": [],
+  "available": null,
+  "available_text": null,
+  "bathrooms": 1.0,
+  "bedrooms": "1",
+  "description": "Condo Apartment. High-Rise. Pets: Restrict",
+  "flags": [],
+  "furnished": false,
+  "lat": 43.6703118,
+  "lon": -79.3942986,
+  "photo": "https://cdn.repliers.io/IMG-C14158536_12b81b985cb55ead8aae0f2aaf390ca43555a02592adf76434edd650b693eed8.jpg",
+  "posted": "2026-11-06",
+  "price": 2300,
+  "score": 0.0,
+  "sent_at": null,
+  "source": "condos.ca",
+  "source_id": "C14158536",
+  "sqft": 440,
+  "tier": 3,
+  "title": "1110 - 155 Yorkville Avenue",
+  "unit_type": "Condo Apartment",
+  "url": "https://condos.ca/toronto/residences-of-yorkville-plaza-155-yorkville-ave/unit-1110-C14158536"
  }
 ]
