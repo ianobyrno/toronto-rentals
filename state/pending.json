@@ -3809,5 +3809,32 @@
   "title": "1517 - 35 Bastion Street",
   "unit_type": "Condo Apartment",
   "url": "https://condos.ca/toronto/york-harbour-club-23-39-bastion-st-80-96-sloping-sky-mews-22-42-grand-magazine-st-181-195-fort-york-blvd/unit-1517-C14160270"
+ },
+ {
+  "address": "2607 - 70 Queens Wharf Road",
+  "also_on": [],
+  "available": "2027-01-01",
+  "available_text": null,
+  "bathrooms": 1.0,
+  "bedrooms": "1",
+  "description": "Condo Apartment. Outdoor space: Balcony, Patio. High-Rise. Pets: No",
+  "flags": [
+   "🌳 outdoor space"
+  ],
+  "furnished": false,
+  "lat": 43.6385781,
+  "lon": -79.3993661,
+  "photo": "https://cdn.repliers.io/IMG-C14160538_386255d9b9eb6911f6c8dba20c80f0652cf7fb94c31d084b72790c1be3718be2.jpg",
+  "posted": "2026-11-07",
+  "price": 2300,
+  "score": 2.0,
+  "sent_at": null,
+  "source": "condos.ca",
+  "source_id": "C14160538",
+  "sqft": 505,
+  "tier": 2,
+  "title": "2607 - 70 Queens Wharf Road",
+  "unit_type": "Condo Apartment",
+  "url": "https://condos.ca/toronto/forward-condos-70-90-queens-wharf-rd/unit-2607-C14160538"
  }
 ]
