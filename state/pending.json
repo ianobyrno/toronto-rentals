@@ -3312,5 +3312,60 @@
   "title": "3209 - 251 Jarvis Street",
   "unit_type": "Condo Apartment",
   "url": "https://condos.ca/toronto/dundas-square-gardens-251-jarvis-st-200-dundas-st-e/unit-3209-C14158652"
+ },
+ {
+  "address": "569 Broadview Ave, Toronto, ON, M4K 2N8",
+  "also_on": [],
+  "available": "2024-10-01",
+  "available_text": null,
+  "bathrooms": 1.0,
+  "bedrooms": "studio",
+  "description": "Broadview Mansions at 569 Broadview & 9 Tennis\n\nBroadview Mansions is a charismatic, boutique apartment community with excellent onsite amenities and a friendly atmosphere all within a quiet, yet accessible, Toronto neighbourhood. Find your new home with our studio, 1 bedroom, and 2 bedroom apartment rentals. \n\nThis charming 4-storey building features a variety of suites redesigned to include art deco fireplaces, beautiful built-in bookshelves, and charming French doors that set living spaces apart. Our welcoming community boasts a cozy courtyard entrance and a private BBQ patio for individual or community socializing. Broadview Mansions is complete with on-site laundry facilities, storage lockers, and a fully-equipped fitness facility. \n\nOur pet friendly building is directly across the street from the beautiful Riverdale Park East that offers a great environment for dogs, space for ample activities, and an extensive open greenspace with paved nature trails to explore. Shopping, restaurants, and services line nearby Danforth Avenue while the Gerrard Square Shopping Centre is minutes away. The TTC stops outside your door and it’s a short walk to the Broadview station; plus, you’ve got quick access to the Don Valley Parkway and the Gardiner Expressway. \n\nChoose Broadview Mansions for its quiet serenity and boutique suites, stay for its desirable Riverdale location. \n\nIncentive: \n• 1 Month Free",
+  "flags": [
+   "🌳 outdoor space",
+   "site's move-in date (01 Oct 2024) is stale — ignored"
+  ],
+  "furnished": false,
+  "lat": 43.67241,
+  "lon": -79.3548,
+  "photo": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/c9/c9cc4975-5ae8-4786-8757-cdcfca79814a?rule=kijijica-200-jpg",
+  "posted": "2026-11-07T09:08:31.000Z",
+  "price": 1789,
+  "score": 2.51,
+  "sent_at": null,
+  "source": "kijiji",
+  "source_id": "1737292861",
+  "sqft": 425,
+  "tier": 3,
+  "title": "Broadview Mansions at 569 Broadview & 9 Tennis",
+  "unit_type": "apartment",
+  "url": "https://www.kijiji.ca/v-apartments-condos/city-of-toronto/broadview-mansions-at-569-broadview-9-tennis/1737292861"
+ },
+ {
+  "address": "9 Tennis Crescent, Toronto, ON, M4K 2N8",
+  "also_on": [],
+  "available": "2026-04-25",
+  "available_text": null,
+  "bathrooms": 1.0,
+  "bedrooms": "studio",
+  "description": "Broadview Mansions\n\nIncentives: \n• 2 months free\n• $500 Signing Bonus",
+  "flags": [
+   "site's move-in date (25 Apr 2026) is stale — ignored"
+  ],
+  "furnished": false,
+  "lat": 43.6726,
+  "lon": -79.35442,
+  "photo": null,
+  "posted": "2026-11-07T09:08:30.000Z",
+  "price": 1869,
+  "score": 0.43,
+  "sent_at": null,
+  "source": "kijiji",
+  "source_id": "1745240005",
+  "sqft": 506,
+  "tier": 3,
+  "title": "Broadview Mansions",
+  "unit_type": "apartment",
+  "url": "https://www.kijiji.ca/v-apartments-condos/city-of-toronto/broadview-mansions/1745240005"
  }
 ]
