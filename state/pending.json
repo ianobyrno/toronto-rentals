@@ -3024,7 +3024,9 @@
  },
  {
   "address": "2603 - 319 Jarvis Street",
-  "also_on": [],
+  "also_on": [
+   "https://www.kijiji.ca/v-apartments-condos/city-of-toronto/2603-319-jarvis-street-toronto-church-yonge-corridor-ontari/1745898185"
+  ],
   "available": "2027-01-01",
   "available_text": null,
   "bathrooms": 1.0,
@@ -3051,7 +3053,9 @@
  },
  {
   "address": "2612 - 290 Adelaide Street W",
-  "also_on": [],
+  "also_on": [
+   "https://www.kijiji.ca/v-apartments-condos/city-of-toronto/2612-290-adelaide-street-w-toronto-waterfront-communities-o/1745898121"
+  ],
   "available": "2027-01-01",
   "available_text": null,
   "bathrooms": 1.0,
@@ -3078,7 +3082,9 @@
  },
  {
   "address": "4006 - 33 Bay Street",
-  "also_on": [],
+  "also_on": [
+   "https://www.kijiji.ca/v-apartments-condos/city-of-toronto/4006-33-bay-street-toronto-waterfront-communities-ontario/1745898899"
+  ],
   "available": "2027-01-01",
   "available_text": null,
   "bathrooms": 1.0,
@@ -4181,5 +4187,84 @@
   "title": "3501 - 100 QUEEN STREET E Toronto (Church-Yonge Corridor), Ontar",
   "unit_type": null,
   "url": "https://www.kijiji.ca/v-apartments-condos/city-of-toronto/3501-100-queen-street-e-toronto-church-yonge-corridor-ontar/1745897994"
+ },
+ {
+  "address": "- 65 ST MARY STREET N, Toronto (Bay Street Corridor), ON, M5S0A6",
+  "also_on": [],
+  "available": null,
+  "available_text": null,
+  "bathrooms": 1.0,
+  "bedrooms": "studio",
+  "description": "Bright Studio Apartment At The U Condo's, Floor To Ceiling Window, 9' Ceiling & Balcony. Includes Murphy Bed. Just Steps To Michael's College Campus Of The University Of Toronto, Yorkville, Hospitals, Restaurants, Shops & Much More! Large Facilities Area, Party Room, Library, Fitness Room & Yoga Studio, Steam Room & Visitor Parking (id:24493)\n\nMLS® #C14099440 \n\nThe trademarks MLS®, Multiple Listing Service® and the associated logos are owned by The Canadian Real Estate Association (CREA) and identify the quality of services provided by real estate professionals who are members of CREA",
+  "flags": [
+   "🌳 outdoor space"
+  ],
+  "furnished": null,
+  "lat": 43.66692,
+  "lon": -79.3889,
+  "photo": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/1b/1b9c1fb6-ec33-498e-9bb4-6cd6d1da61b4?rule=kijijica-200-jpg",
+  "posted": "2026-11-08T10:42:01.000Z",
+  "price": 2100,
+  "score": 2.2,
+  "sent_at": null,
+  "source": "kijiji",
+  "source_id": "1745898080",
+  "sqft": null,
+  "tier": 3,
+  "title": "2810 - 65 ST MARY STREET N Toronto (Bay Street Corridor), Ontari",
+  "unit_type": null,
+  "url": "https://www.kijiji.ca/v-apartments-condos/city-of-toronto/2810-65-st-mary-street-n-toronto-bay-street-corridor-ontari/1745898080"
+ },
+ {
+  "address": "PETER STREET, Toronto (Waterfront Communities), ON, M5V2G4",
+  "also_on": [],
+  "available": null,
+  "available_text": null,
+  "bathrooms": 1.0,
+  "bedrooms": "studio",
+  "description": "Fantastic Opportunity To Move To One Of Toronto's Finest Residences Located In Prime Entertainment District. Well Maintained And Functionally Laid Out Studio Boasting A Clear Open Western View To Enjoy The City's Sunset And Skyline. Building Filled With Modern Amenities Including: Fitness Room, Yoga Room, Sauna, Party Room. Walking Distance To Everything Downtown's Best Has To Offer. King Street Car Just Steps Away - Short Walk To Union Station And Ttc Subway Station (St Andrew). Building Is Wired For Beanfield Internet Service. (Please Note That Photos Are From Previous Listing) (id:24493)\n\nMLS® #C14159610 \n\nThe trademarks MLS®, Multiple Listing Service® and the associated logos are owned by The Canadian Real Estate Association (CREA) and identify the quality of services provided by real estate professionals who are members of CREA",
+  "flags": [],
+  "furnished": null,
+  "lat": 43.64685,
+  "lon": -79.39239,
+  "photo": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/8a/8a3101da-902a-4531-85b5-bc05d75b64e9?rule=kijijica-200-jpg",
+  "posted": "2026-11-08T10:24:00.000Z",
+  "price": 2050,
+  "score": 0.25,
+  "sent_at": null,
+  "source": "kijiji",
+  "source_id": "1745897293",
+  "sqft": null,
+  "tier": 3,
+  "title": "87 PETER STREET Toronto (Waterfront Communities), Ontario",
+  "unit_type": null,
+  "url": "https://www.kijiji.ca/v-apartments-condos/city-of-toronto/87-peter-street-toronto-waterfront-communities-ontario/1745897293"
+ },
+ {
+  "address": "- 832 BAY STREET, Toronto (Bay Street Corridor), ON, M5S1Z6",
+  "also_on": [],
+  "available": null,
+  "available_text": null,
+  "bathrooms": 1.0,
+  "bedrooms": "1",
+  "description": "Welcome To The Fabulous 832 Bay St. This Luxury 1 Bed, 1 Bathroom Well Maintained Condo Is The Heart Of The Action Downtown At Bay And College. The Building Has An Outdoor Pool, Equipped Gym, Rooftop Patio, Theatre Room, Steam Room, And 24 Hr Concierge. This Unit Has Amazing Views From The Balcony And Is Large Enough For A Dining Table And Work From Home Space. The Media Storage Unit In The Living Room Is Included, As Is The Custom Granite Island In The Kitchen. There Is Lighting Under The Cabinets And Integrated Into The Media Wall, As Well As Updated Washer & Dryer. (id:24493)\n\nMLS® #C14157992 \n\nThe trademarks MLS®, Multiple Listing Service® and the associated logos are owned by The Canadian Real Estate Association (CREA) and identify the quality of services provided by real estate professionals who are members of CREA",
+  "flags": [
+   "🌳 outdoor space"
+  ],
+  "furnished": null,
+  "lat": 43.66223,
+  "lon": -79.38663,
+  "photo": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/9a/9a977fee-1feb-4024-9c8a-cb3143ff033a?rule=kijijica-200-jpg",
+  "posted": "2026-11-08T10:06:00.000Z",
+  "price": 2300,
+  "score": 2.0,
+  "sent_at": null,
+  "source": "kijiji",
+  "source_id": "1745897799",
+  "sqft": null,
+  "tier": 3,
+  "title": "4207 - 832 BAY STREET Toronto (Bay Street Corridor), Ontario",
+  "unit_type": null,
+  "url": "https://www.kijiji.ca/v-apartments-condos/city-of-toronto/4207-832-bay-street-toronto-bay-street-corridor-ontario/1745897799"
  }
 ]
