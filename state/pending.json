@@ -4352,5 +4352,32 @@
   "title": "1603 - 35 Parliament Street",
   "unit_type": "Condo Apartment",
   "url": "https://condos.ca/toronto/the-goode-33-parliament-st-35-parliament-st/unit-1603-C14161010"
+ },
+ {
+  "address": "3503 - 99 Harbour Square",
+  "also_on": [],
+  "available": null,
+  "available_text": null,
+  "bathrooms": 1.0,
+  "bedrooms": null,
+  "description": "Condo Apartment. High-Rise. Pets: No",
+  "flags": [
+   "bedrooms unknown"
+  ],
+  "furnished": false,
+  "lat": 43.6400751,
+  "lon": -79.3790917,
+  "photo": "https://cdn.repliers.io/IMG-C14161344_e85150a98010a60bd087f321d483459e01d10c828c52cc3c3041c8e7b73480a8.jpg",
+  "posted": "2026-11-08",
+  "price": 2250,
+  "score": 0.05,
+  "sent_at": null,
+  "source": "condos.ca",
+  "source_id": "C14161344",
+  "sqft": 486,
+  "tier": 3,
+  "title": "3503 - 99 Harbour Square",
+  "unit_type": "Condo Apartment",
+  "url": "https://condos.ca/toronto/one-york-quay-77-99-harbour-square-99-harbour-sq/unit-3503-C14161344"
  }
 ]
