@@ -4127,5 +4127,32 @@
   "title": "508 - 393 King Street W",
   "unit_type": "Condo Apartment",
   "url": "https://condos.ca/toronto/the-393-on-king-393-king-st-w/unit-508-C14160806"
+ },
+ {
+  "address": "2915 - 181 Dundas Street E",
+  "also_on": [],
+  "available": "2027-01-05",
+  "available_text": null,
+  "bathrooms": 1.0,
+  "bedrooms": "1+den",
+  "description": "Condo Apartment. Outdoor space: Balcony, Patio. High-Rise, Low-Rise. Pets: Restrict",
+  "flags": [
+   "🌳 outdoor space"
+  ],
+  "furnished": false,
+  "lat": 43.6569438,
+  "lon": -79.3741108,
+  "photo": "https://cdn.repliers.io/IMG-C14160870_242662af9a7a3220ed1af8eb9ab93331f7f1cd7e12ccba1df44d9a14c42732e9.jpg",
+  "posted": "2026-11-08",
+  "price": 2200,
+  "score": 3.1,
+  "sent_at": null,
+  "source": "condos.ca",
+  "source_id": "C14160870",
+  "sqft": 495,
+  "tier": 2,
+  "title": "2915 - 181 Dundas Street E",
+  "unit_type": "Condo Apartment",
+  "url": "https://condos.ca/toronto/grid-condos-181-dundas-st-e/unit-2915-C14160870"
  }
 ]
