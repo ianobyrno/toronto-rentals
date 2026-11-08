@@ -4111,7 +4111,9 @@
  },
  {
   "address": "508 - 393 King Street W",
-  "also_on": [],
+  "also_on": [
+   "https://www.kijiji.ca/v-apartments-condos/city-of-toronto/downtown-king-spadina-1-bed-1-bath-w-parking-for-rent/1745915103"
+  ],
   "available": "2027-01-01",
   "available_text": null,
   "bathrooms": 1.0,
