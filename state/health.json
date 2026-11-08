@@ -2,11 +2,11 @@
  "condos.ca": {
   "last_count": 152,
   "last_error": null,
-  "last_ok": "2026-11-08T07:22:50+00:00"
+  "last_ok": "2026-11-08T10:00:44+00:00"
  },
  "kijiji": {
-  "last_count": 0,
-  "last_error": "2026-11-08T07:22:33+00:00 Blocked: 403 from www.kijiji.ca — the site is refusing automated requests",
-  "last_ok": "2026-11-08T04:10:23+00:00"
+  "last_count": 46,
+  "last_error": null,
+  "last_ok": "2026-11-08T10:00:30+00:00"
  }
 }

@@ -4154,5 +4154,32 @@
   "title": "2915 - 181 Dundas Street E",
   "unit_type": "Condo Apartment",
   "url": "https://condos.ca/toronto/grid-condos-181-dundas-st-e/unit-2915-C14160870"
+ },
+ {
+  "address": "- 100 QUEEN STREET E, Toronto (Church-Yonge Corridor), ON, M5C0B5",
+  "also_on": [],
+  "available": null,
+  "available_text": null,
+  "bathrooms": 1.0,
+  "bedrooms": "1",
+  "description": "Fabulous new condo in prime downtown Toronto location! Enjoy floor-to-ceiling windows with breathtaking city skyline views. This bright 1-bedroom suite boasts a kitchen with built-in stainless steel appliances and ensuite laundry. Wonderful building amenities include a concierge, fitness centre, art studio, rooftop terrace with barbecue area, podcast studio and party room. Walk to absolutely everything... the subway, the PATH, Eaton Centre, universities, entertainment, financial district, trendy dining and shopping! Welcome Home! (id:24493)\n\nMLS® #C14157940 \n\nThe trademarks MLS®, Multiple Listing Service® and the associated logos are owned by The Canadian Real Estate Association (CREA) and identify the quality of services provided by real estate professionals who are members of CREA",
+  "flags": [
+   "🌳 outdoor space"
+  ],
+  "furnished": null,
+  "lat": 43.65368,
+  "lon": -79.37395,
+  "photo": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/e7/e7671c28-af7d-40cd-bcf4-f333692d03f1?rule=kijijica-200-jpg",
+  "posted": "2026-11-08T10:00:00.000Z",
+  "price": 2200,
+  "score": 2.1,
+  "sent_at": null,
+  "source": "kijiji",
+  "source_id": "1745897994",
+  "sqft": null,
+  "tier": 3,
+  "title": "3501 - 100 QUEEN STREET E Toronto (Church-Yonge Corridor), Ontar",
+  "unit_type": null,
+  "url": "https://www.kijiji.ca/v-apartments-condos/city-of-toronto/3501-100-queen-street-e-toronto-church-yonge-corridor-ontar/1745897994"
  }
 ]
