@@ -4406,5 +4406,32 @@
   "title": "4 - 996 QUEEN STREET E Toronto (South Riverdale), Ontario",
   "unit_type": null,
   "url": "https://www.kijiji.ca/v-apartments-condos/city-of-toronto/4-996-queen-street-e-toronto-south-riverdale-ontario/1741858168"
+ },
+ {
+  "address": "1406 - 195 McCaul Street",
+  "also_on": [],
+  "available": "2027-01-01",
+  "available_text": null,
+  "bathrooms": 1.0,
+  "bedrooms": null,
+  "description": "Condo Apartment. High-Rise. Pets: Restrict",
+  "flags": [
+   "bedrooms unknown"
+  ],
+  "furnished": false,
+  "lat": 43.6567108,
+  "lon": -79.3921414,
+  "photo": "https://cdn.repliers.io/IMG-C14161558_2782601540217dd123b98da99811b61e5c5fba152c2db09f83b1f76823e463f9.jpg",
+  "posted": "2026-11-09",
+  "price": 2050,
+  "score": 0.25,
+  "sent_at": null,
+  "source": "condos.ca",
+  "source_id": "C14161558",
+  "sqft": null,
+  "tier": 2,
+  "title": "1406 - 195 McCaul Street",
+  "unit_type": "Condo Apartment",
+  "url": "https://condos.ca/toronto/the-bread-company-condos-193-mccaul-st-195-mccaul-st/unit-1406-C14161558"
  }
 ]
