@@ -4379,5 +4379,32 @@
   "title": "3503 - 99 Harbour Square",
   "unit_type": "Condo Apartment",
   "url": "https://condos.ca/toronto/one-york-quay-77-99-harbour-square-99-harbour-sq/unit-3503-C14161344"
+ },
+ {
+  "address": "- 996 QUEEN STREET E, Toronto (South Riverdale), ON, M4M1K1",
+  "also_on": [],
+  "available": null,
+  "available_text": null,
+  "bathrooms": 1.0,
+  "bedrooms": "1",
+  "description": "Prime Leslieville Location to be. Loft Style Walk-Up in Cul-de-sac. 2, 1 bed 1 Bath Apartments available with Balconies. Lots of fun Restaurants and shop right at your door. Newly Renovated and Freshly Painted features L-Shaped Kitchen with Tones of Storage. Large Living area for enjoyment and relaxation. Good Sized Primary Bedroom with walk out balcony to enjoy outdoor views. Queen St street (id:24493)\n\nMLS® #E13655624 \n\nThe trademarks MLS®, Multiple Listing Service® and the associated logos are owned by The Canadian Real Estate Association (CREA) and identify the quality of services provided by real estate professionals who are members of CREA",
+  "flags": [
+   "🌳 outdoor space"
+  ],
+  "furnished": null,
+  "lat": 43.66138,
+  "lon": -79.33959,
+  "photo": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/84/84c75e90-a36e-4c8f-9a73-b24805c92425?rule=kijijica-200-jpg",
+  "posted": "2026-11-09T00:34:00.000Z",
+  "price": 1900,
+  "score": 2.4,
+  "sent_at": null,
+  "source": "kijiji",
+  "source_id": "1741858168",
+  "sqft": null,
+  "tier": 3,
+  "title": "4 - 996 QUEEN STREET E Toronto (South Riverdale), Ontario",
+  "unit_type": null,
+  "url": "https://www.kijiji.ca/v-apartments-condos/city-of-toronto/4-996-queen-street-e-toronto-south-riverdale-ontario/1741858168"
  }
 ]
