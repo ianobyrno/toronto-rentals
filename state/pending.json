@@ -5076,5 +5076,32 @@
   "title": "2103 - 219 Dundas Street E",
   "unit_type": "Condo Apartment",
   "url": "https://condos.ca/toronto/in-de-condos-219-dundas-st-e/unit-2103-C14165724"
+ },
+ {
+  "address": "1201 - 101 Peter Street",
+  "also_on": [],
+  "available": "2027-01-01",
+  "available_text": null,
+  "bathrooms": 1.0,
+  "bedrooms": "1",
+  "description": "Condo Apartment. Outdoor space: Balcony, Patio. High-Rise. Pets: No",
+  "flags": [
+   "🌳 outdoor space"
+  ],
+  "furnished": false,
+  "lat": 43.6475017,
+  "lon": -79.3927222,
+  "photo": "https://cdn.repliers.io/IMG-C14166162_4d7dd85eb70eca2816cd348b2d9dc7375dd153b10919622df4db23504946d40f.jpg",
+  "posted": "2026-11-10",
+  "price": 2250,
+  "score": 2.05,
+  "sent_at": null,
+  "source": "condos.ca",
+  "source_id": "C14166162",
+  "sqft": 506,
+  "tier": 2,
+  "title": "1201 - 101 Peter Street",
+  "unit_type": "Condo Apartment",
+  "url": "https://condos.ca/toronto/peter-street-condos-101-peter-st/unit-1201-C14166162"
  }
 ]
