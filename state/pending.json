@@ -5211,5 +5211,61 @@
   "title": "5001 - 89 Church Street",
   "unit_type": "Condo Apartment",
   "url": "https://condos.ca/toronto/the-saint-89-church-st-89-church-st/unit-5001-C14166970"
+ },
+ {
+  "address": "2107 - 82 DALHOUSIE Street",
+  "also_on": [],
+  "available": "2027-01-01",
+  "available_text": null,
+  "bathrooms": 1.0,
+  "bedrooms": null,
+  "description": "Co-Op Apartment. Outdoor space: Balcony, Patio. High-Rise. Pets: Restrict",
+  "flags": [
+   "🌳 outdoor space",
+   "bedrooms unknown"
+  ],
+  "furnished": false,
+  "lat": 43.6557378,
+  "lon": -79.3764533,
+  "photo": "https://cdn.repliers.io/IMG-C14168240_c27fe8c7cdc906670932a88ab9b68a10a8b878a2824f971a0f25ca5ebe5406c5.jpg",
+  "posted": "2026-11-10",
+  "price": 1900,
+  "score": 2.4,
+  "sent_at": null,
+  "source": "condos.ca",
+  "source_id": "C14168240",
+  "sqft": 348,
+  "tier": 2,
+  "title": "2107 - 82 DALHOUSIE Street",
+  "unit_type": "Co-Op Apartment",
+  "url": "https://condos.ca/toronto/199-church-condos-199-church-st-82-dalhousie-st/unit-2107-C14168240"
+ },
+ {
+  "address": "203 - 45 Connaught Avenue",
+  "also_on": [],
+  "available": null,
+  "available_text": null,
+  "bathrooms": 1.0,
+  "bedrooms": null,
+  "description": "Condo Apartment. Outdoor space: Balcony, Patio. Low-Rise. Pets: Restrict",
+  "flags": [
+   "🌳 outdoor space",
+   "bedrooms unknown"
+  ],
+  "furnished": false,
+  "lat": 43.6645913,
+  "lon": -79.32195,
+  "photo": "https://cdn.repliers.io/IMG-E14167948_786d9a2d541e0f3e8fb4603a6e1a1e000110275c910f67f1c0794c0eff9e6aca.jpg",
+  "posted": "2026-11-10",
+  "price": 1750,
+  "score": 2.55,
+  "sent_at": null,
+  "source": "condos.ca",
+  "source_id": "E14167948",
+  "sqft": null,
+  "tier": 3,
+  "title": "203 - 45 Connaught Avenue",
+  "unit_type": "Condo Apartment",
+  "url": "https://condos.ca/toronto/45-connaught-ave-condos-45-connaught-ave/unit-203-E14167948"
  }
 ]
