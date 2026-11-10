@@ -4412,7 +4412,9 @@
  },
  {
   "address": "1406 - 195 McCaul Street",
-  "also_on": [],
+  "also_on": [
+   "https://www.kijiji.ca/v-apartments-condos/city-of-toronto/1406-195-mccaul-street-toronto-kensington-chinatown-ontario/1745985765"
+  ],
   "available": "2027-01-01",
   "available_text": null,
   "bathrooms": 1.0,
@@ -5020,5 +5022,59 @@
   "title": "105 - 11 St Joseph Street",
   "unit_type": "Condo Apartment",
   "url": "https://condos.ca/toronto/eleven-residences-11-st-joseph-st/unit-105-C14165506"
+ },
+ {
+  "address": "- 955 BAY STREET, Toronto (Bay Street Corridor), ON, M5S0C6",
+  "also_on": [],
+  "available": null,
+  "available_text": null,
+  "bathrooms": 1.0,
+  "bedrooms": "1",
+  "description": "Luxurious Britt Condo in the heart of downtown Toronto. One bedroom NE facing corner unit with wrap balcony and spectacular views. Floor to ceiling windows, laminate floors throughout. Contemporary upscale kitchen with integrated & built-in appliances. Steps to U of T St George Campus, TMU, Queen's Park, hospitals, Wellesley station, Yorkville, financial districts & more. (id:24493)\n\nMLS® #C14161164 \n\nThe trademarks MLS®, Multiple Listing Service® and the associated logos are owned by The Canadian Real Estate Association (CREA) and identify the quality of services provided by real estate professionals who are members of CREA",
+  "flags": [
+   "🌳 outdoor space"
+  ],
+  "furnished": null,
+  "lat": 43.66485,
+  "lon": -79.38698,
+  "photo": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/41/41c33aa7-f82c-4478-8e1e-be099af38ccd?rule=kijijica-200-jpg",
+  "posted": "2026-11-10T10:12:00.000Z",
+  "price": 2300,
+  "score": 2.0,
+  "sent_at": null,
+  "source": "kijiji",
+  "source_id": "1745985781",
+  "sqft": null,
+  "tier": 3,
+  "title": "1816 - 955 BAY STREET Toronto (Bay Street Corridor), Ontario",
+  "unit_type": null,
+  "url": "https://www.kijiji.ca/v-apartments-condos/city-of-toronto/1816-955-bay-street-toronto-bay-street-corridor-ontario/1745985781"
+ },
+ {
+  "address": "2103 - 219 Dundas Street E",
+  "also_on": [],
+  "available": "2027-01-01",
+  "available_text": null,
+  "bathrooms": 1.0,
+  "bedrooms": "1+den",
+  "description": "Condo Apartment. Outdoor space: Balcony, Patio. High-Rise. Pets: Restrict",
+  "flags": [
+   "🌳 outdoor space"
+  ],
+  "furnished": false,
+  "lat": 43.6575048,
+  "lon": -79.3728456,
+  "photo": "https://cdn.repliers.io/IMG-C14165724_b7b3a204138cc20878668e9be24d1d97b35ee8ffef4ba7186e6e7fc5d680a60e.jpg",
+  "posted": "2026-11-10",
+  "price": 2300,
+  "score": 3.0,
+  "sent_at": null,
+  "source": "condos.ca",
+  "source_id": "C14165724",
+  "sqft": 590,
+  "tier": 2,
+  "title": "2103 - 219 Dundas Street E",
+  "unit_type": "Condo Apartment",
+  "url": "https://condos.ca/toronto/in-de-condos-219-dundas-st-e/unit-2103-C14165724"
  }
 ]
