@@ -4570,7 +4570,9 @@
  },
  {
   "address": "1507 - 89 McGill Street",
-  "also_on": [],
+  "also_on": [
+   "https://www.kijiji.ca/v-apartments-condos/city-of-toronto/1507-89-mcgill-street-toronto-church-yonge-corridor-ontario/1746030352"
+  ],
   "available": null,
   "available_text": null,
   "bathrooms": 1.0,
@@ -4625,7 +4627,9 @@
  },
  {
   "address": "1729 - 230 Simcoe Street",
-  "also_on": [],
+  "also_on": [
+   "https://www.kijiji.ca/v-apartments-condos/city-of-toronto/1729-230-simcoe-street-toronto-kensington-chinatown-ontario/1746029472"
+  ],
   "available": null,
   "available_text": null,
   "bathrooms": 1.0,
@@ -4762,7 +4766,9 @@
  },
  {
   "address": "512 - 15 Richardson Street",
-  "also_on": [],
+  "also_on": [
+   "https://www.kijiji.ca/v-apartments-condos/city-of-toronto/512-15-richardson-street-toronto-waterfront-communities-ont/1746031327"
+  ],
   "available": null,
   "available_text": null,
   "bathrooms": 1.0,
@@ -5409,5 +5415,113 @@
   "title": "60 Tyndall Ave - 1 Bedroom Apartment for Rent",
   "unit_type": "apartment",
   "url": "https://www.kijiji.ca/v-apartments-condos/city-of-toronto/60-tyndall-ave-1-bedroom-apartment-for-rent/1735303163"
+ },
+ {
+  "address": "- 955 BAY STREET, Toronto (Bay Street Corridor), ON, M5S2A2",
+  "also_on": [],
+  "available": null,
+  "available_text": null,
+  "bathrooms": 1.0,
+  "bedrooms": "1",
+  "description": "The Britt Luxury Condo In Excellent Prime Downtown Core 1Bed,1Bath Unit Facing With south! Modern Design Kitchen, Open Concept W/ Built-In Appliances. Excellent & Convenient Location. Walking Distance To U Of T. Amazing Amenities: Including 24Hr Concierge, 2-Storey Lobby, Fitness Centre, Lounge, Party Room, Outdoor Pool. (id:24493)\n\nMLS® #C14164956 \n\nThe trademarks MLS®, Multiple Listing Service® and the associated logos are owned by The Canadian Real Estate Association (CREA) and identify the quality of services provided by real estate professionals who are members of CREA",
+  "flags": [],
+  "furnished": null,
+  "lat": 43.66485,
+  "lon": -79.38698,
+  "photo": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/a5/a519331e-9863-4f3e-b709-88f87c292ee7?rule=kijijica-200-jpg",
+  "posted": "2026-11-11T10:48:00.000Z",
+  "price": 2200,
+  "score": 0.1,
+  "sent_at": null,
+  "source": "kijiji",
+  "source_id": "1746029805",
+  "sqft": null,
+  "tier": 3,
+  "title": "3102 - 955 BAY STREET Toronto (Bay Street Corridor), Ontario",
+  "unit_type": null,
+  "url": "https://www.kijiji.ca/v-apartments-condos/city-of-toronto/3102-955-bay-street-toronto-bay-street-corridor-ontario/1746029805"
+ },
+ {
+  "address": "- 19 BATHURST STREET, Toronto (Waterfront Communities), ON, M5V0N2",
+  "also_on": [],
+  "available": null,
+  "available_text": null,
+  "bathrooms": 1.0,
+  "bedrooms": "1",
+  "description": "Welcome To The Lakefront Soaring Majestically Buildings With Functional Layout 1 Bedroom Plus 80 Sq.Ft. Of Balcony. With Over 50,000 Sq. Ft. Loblaw's Flagship Supermarket. Access To 23,000 Sq. Ft. Hotel Style Amenities. Steps to Transit, Park, School, Community Centre, Shopping, Restaurants and More. Minutes Walk To The Lake. The furniture in the picture is NOT INCLUDED. (id:24493)\n\nMLS® #C14165350 \n\nThe trademarks MLS®, Multiple Listing Service® and the associated logos are owned by The Canadian Real Estate Association (CREA) and identify the quality of services provided by real estate professionals who are members of CREA",
+  "flags": [
+   "🌳 outdoor space"
+  ],
+  "furnished": null,
+  "lat": 43.63756,
+  "lon": -79.39985,
+  "photo": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/b2/b2728c4b-b9b9-490b-bd60-04af6cc52a46?rule=kijijica-200-jpg",
+  "posted": "2026-11-11T10:30:01.000Z",
+  "price": 2300,
+  "score": 2.0,
+  "sent_at": null,
+  "source": "kijiji",
+  "source_id": "1746032182",
+  "sqft": null,
+  "tier": 3,
+  "title": "806 - 19 BATHURST STREET Toronto (Waterfront Communities), Ontar",
+  "unit_type": null,
+  "url": "https://www.kijiji.ca/v-apartments-condos/city-of-toronto/806-19-bathurst-street-toronto-waterfront-communities-ontar/1746032182"
+ },
+ {
+  "address": "- 201 DUNDAS STREET E, Toronto (Moss Park), ON, M5A1Z4",
+  "also_on": [],
+  "available": null,
+  "available_text": null,
+  "bathrooms": 1.0,
+  "bedrooms": "2",
+  "description": "Beautiful 2 Bedroom Apartment Located On The 3rd Floor, Featuring A Spacious Private Patio Perfect For Outdoor Enjoyment. Ideally Situated In A Convenient Downtown Location, Just Minutes From Public Transit, Schools, Shopping Centers, And Everyday Amenities. (id:24493)\n\nMLS® #C14162010 \n\nThe trademarks MLS®, Multiple Listing Service® and the associated logos are owned by The Canadian Real Estate Association (CREA) and identify the quality of services provided by real estate professionals who are members of CREA",
+  "flags": [
+   "🌳 outdoor space",
+   "🏠 house/townhouse unit"
+  ],
+  "furnished": null,
+  "lat": 43.65709,
+  "lon": -79.37372,
+  "photo": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/dd/dd1c9d53-8d21-41c2-b96d-2d949b71890d?rule=kijijica-200-jpg",
+  "posted": "2026-11-11T10:24:00.000Z",
+  "price": 2200,
+  "score": 6.1,
+  "sent_at": null,
+  "source": "kijiji",
+  "source_id": "1746029641",
+  "sqft": null,
+  "tier": 3,
+  "title": "3 - 201 DUNDAS STREET E Toronto (Moss Park), Ontario",
+  "unit_type": null,
+  "url": "https://www.kijiji.ca/v-apartments-condos/city-of-toronto/3-201-dundas-street-e-toronto-moss-park-ontario/1746029641"
+ },
+ {
+  "address": "341 - 30 Dreamers Way",
+  "also_on": [],
+  "available": "2027-01-07",
+  "available_text": null,
+  "bathrooms": 1.0,
+  "bedrooms": null,
+  "description": "Condo Apartment. Outdoor space: Balcony, Patio. High-Rise. Pets: Restrict",
+  "flags": [
+   "🌳 outdoor space",
+   "bedrooms unknown"
+  ],
+  "furnished": false,
+  "lat": 43.661939,
+  "lon": -79.366108,
+  "photo": "https://cdn.repliers.io/IMG-C14169332_d6f919bb96f3b0ff316e06f99e6e33260d517f17aa6b1d4b10eef88ee4dd65c2.jpg",
+  "posted": "2026-11-11",
+  "price": 1750,
+  "score": 2.55,
+  "sent_at": null,
+  "source": "condos.ca",
+  "source_id": "C14169332",
+  "sqft": null,
+  "tier": 2,
+  "title": "341 - 30 Dreamers Way",
+  "unit_type": "Condo Apartment",
+  "url": "https://condos.ca/toronto/daniels-on-parliament-365-parliament-st-30-dreamers-way/unit-341-C14169332"
  }
 ]
