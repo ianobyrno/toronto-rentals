@@ -4708,7 +4708,9 @@
  },
  {
   "address": "1807 - 170 Fort York Boulevard",
-  "also_on": [],
+  "also_on": [
+   "https://www.kijiji.ca/v-apartments-condos/city-of-toronto/1807-170-fort-york-boulevard-toronto-waterfront-communities/1746030236"
+  ],
   "available": null,
   "available_text": null,
   "bathrooms": 1.0,
