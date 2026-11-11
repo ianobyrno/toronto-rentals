@@ -1,12 +1,12 @@
 {
  "condos.ca": {
-  "last_count": 200,
+  "last_count": 201,
   "last_error": null,
-  "last_ok": "2026-11-11T19:19:10+00:00"
+  "last_ok": "2026-11-11T22:18:58+00:00"
  },
  "kijiji": {
   "last_count": 46,
   "last_error": null,
-  "last_ok": "2026-11-11T19:18:49+00:00"
+  "last_ok": "2026-11-11T22:18:40+00:00"
  }
 }
