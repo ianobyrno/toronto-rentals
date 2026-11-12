@@ -5143,7 +5143,9 @@
  },
  {
   "address": "507 - 15 Baseball Place",
-  "also_on": [],
+  "also_on": [
+   "https://www.kijiji.ca/v-apartments-condos/city-of-toronto/507-15-baseball-place-toronto-south-riverdale-ontario/1746079319"
+  ],
   "available": null,
   "available_text": null,
   "bathrooms": 1.0,
@@ -6217,5 +6219,59 @@
   "title": "905 - 608 Richmond Street W",
   "unit_type": "Condo Apartment",
   "url": "https://condos.ca/toronto/the-harlowe-608-richmond-st-w/unit-905-C14173102"
+ },
+ {
+  "address": "664 Coxwell Avenue, Toronto, ON, M4C 3B6",
+  "also_on": [],
+  "available": "2027-01-01",
+  "available_text": null,
+  "bathrooms": 1.0,
+  "bedrooms": "1",
+  "description": "BEDROOMS/BATHROOMS:\n- 1 Bedroom\n- 1 Bathroom (4pc)\n\nPRICING:\n- $1749 per month\n\nUTILITIES:\n- Heat, Hydro and Water Included\n\nMOVE IN DATE:\n- Avail January 1, 2027\n\nPARKING:\n- No Parking\n____________________________________\n\n664 COXWELL AVE. SUITE 3 SPECIFICS:\n- Appliances: Fridge and Stove\n- Rear main floor suite\n- Bright, open-concept living, dining, and kitchen area.\n- Kitchen featuring ample cabinetry and a convenient breakfast bar.\n- Nicely sized bedroom with a large window allowing for plenty of natural light and an open view of the living area.\n- Shared coin-operated laundry facilities.\n- Private entrance\n- Ideally located in Toronto’s east end, just minutes from Coxwell Subway Station, the vibrant Danforth shopping and dining district, local cafés, grocery stores, and nearby green spaces, including Monarch Park.\n- Professionally managed by Landlord Property and Rental Management Inc.",
+  "flags": [
+   "🏠 house/townhouse unit"
+  ],
+  "furnished": false,
+  "lat": 43.68213,
+  "lon": -79.32337,
+  "photo": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/cb/cba6027f-25be-45fe-b96b-686e8fff004f?rule=kijijica-200-jpg",
+  "posted": "2026-11-12T13:18:00.000Z",
+  "price": 1749,
+  "score": 3.55,
+  "sent_at": null,
+  "source": "kijiji",
+  "source_id": "1746077447",
+  "sqft": 500,
+  "tier": 2,
+  "title": "664 Coxwell Ave - 3",
+  "unit_type": "apartment",
+  "url": "https://www.kijiji.ca/v-apartments-condos/city-of-toronto/664-coxwell-ave-3/1746077447"
+ },
+ {
+  "address": "- 560 FRONT STREET W, Toronto (Waterfront Communities), ON, M5V1C1",
+  "also_on": [],
+  "available": null,
+  "available_text": null,
+  "bathrooms": 1.0,
+  "bedrooms": "1",
+  "description": "Welcome to Suite 1232 at The Reve, a luxurious condo by Tridel. Located in the heart of Toronto's vibrantKing West neighbourhood, this unit is just steps away from The Well, STACKT Market and Billy BishopAirport. This boutique building offers state-of-the-art amenities, including a gym, sauna, media room,party/meeting room, game room, home theatre, and a rooftop terrace. The beautiful, freshly painted, one-bedroom suite features a modern kitchen with granite countertops and a brand new stove, floor-to-ceilingwindows, and impeccable finishes throughout. Enjoy quick access to the rooftop terrace located on thetwelfth floor, where you can take in stunning views of the city. With a Walk Score of 95 and aTransit Scoreof 100, this location is ideal for anyone looking for the ultimate downtown lifestyle. Walk to shops,restaurants, and entertainment, including popular spots like Gusto 101, Anejo, and Maxime's. NearbyWellington Victoria Park offers a serene green space for relaxation. Easy access to highways and transitmakes commuting a breeze. Photos are from a previous listing and reflect the unit when professionallystaged. Unit is currently tenanted.Tenant responsible for utilities. (id:24493)\n\nMLS® #C14166698 \n\nThe trademarks MLS®, Multiple Listing Service® and the associated logos are owned by The Canadian Real Estate Association (CREA) and identify the quality of services provided by real estate professionals who are members of CREA",
+  "flags": [
+   "🌳 outdoor space"
+  ],
+  "furnished": null,
+  "lat": 43.64129,
+  "lon": -79.40001,
+  "photo": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/66/664b5247-24cf-4f43-bcca-1db18e1aa8dd?rule=kijijica-200-jpg",
+  "posted": "2026-11-12T10:48:02.000Z",
+  "price": 2100,
+  "score": 2.2,
+  "sent_at": null,
+  "source": "kijiji",
+  "source_id": "1746080212",
+  "sqft": null,
+  "tier": 3,
+  "title": "1232 - 560 FRONT STREET W Toronto (Waterfront Communities), Onta",
+  "unit_type": null,
+  "url": "https://www.kijiji.ca/v-apartments-condos/city-of-toronto/1232-560-front-street-w-toronto-waterfront-communities-onta/1746080212"
  }
 ]
