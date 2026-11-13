@@ -6683,5 +6683,59 @@
   "title": "507 - 1080 Bay Street",
   "unit_type": "Condo Apartment",
   "url": "https://condos.ca/toronto/u-condominium-57-75-st-mary-st-1074-1086-bay-st/unit-507-C14176524"
+ },
+ {
+  "address": "Ground - 52 Michener Court",
+  "also_on": [],
+  "available": null,
+  "available_text": null,
+  "bathrooms": 1.0,
+  "bedrooms": "1",
+  "description": "Townhouse. Pets: Unknown",
+  "flags": [
+   "🏠 house/townhouse unit"
+  ],
+  "furnished": false,
+  "lat": 43.6443059,
+  "lon": -79.4050783,
+  "photo": "https://cdn.repliers.io/IMG-C14176810_04ea46d8564a658782bd528c43f7b5fcefe326059bb9d54a0e812076fba226cc.jpg",
+  "posted": "2026-11-13",
+  "price": 1800,
+  "score": 3.5,
+  "sent_at": null,
+  "source": "condos.ca",
+  "source_id": "C14176810",
+  "sqft": null,
+  "tier": 3,
+  "title": "Ground - 52 Michener Court",
+  "unit_type": "Townhouse",
+  "url": "https://condos.ca/toronto/52-michener-court-toronto"
+ },
+ {
+  "address": "3210 - 75 Queens Wharf Road",
+  "also_on": [],
+  "available": "2027-01-01",
+  "available_text": null,
+  "bathrooms": 1.0,
+  "bedrooms": "1",
+  "description": "Condo Apartment. Outdoor space: Balcony, Patio. High-Rise. Pets: Restrict",
+  "flags": [
+   "🌳 outdoor space"
+  ],
+  "furnished": false,
+  "lat": 43.6383599,
+  "lon": -79.398657,
+  "photo": "https://cdn.repliers.io/IMG-C14176782_a2e19bdb739835255a280f13e10676631cd3c9aaee101c3dbd6d9da20adfaf10.jpg",
+  "posted": "2026-11-13",
+  "price": 2170,
+  "score": 2.13,
+  "sent_at": null,
+  "source": "condos.ca",
+  "source_id": "C14176782",
+  "sqft": null,
+  "tier": 2,
+  "title": "3210 - 75 Queens Wharf Road",
+  "unit_type": "Condo Apartment",
+  "url": "https://condos.ca/toronto/quartz-spectra-75-queens-wharf-rd-85-queens-wharf-rd/unit-3210-C14176782"
  }
 ]
