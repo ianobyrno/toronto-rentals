@@ -5775,7 +5775,9 @@
  },
  {
   "address": "1714 - 955 Bay Street",
-  "also_on": [],
+  "also_on": [
+   "https://www.kijiji.ca/v-apartments-condos/city-of-toronto/1714-955-bay-street-toronto-bay-street-corridor-ontario/1746121244"
+  ],
   "available": null,
   "available_text": null,
   "bathrooms": 1.0,
@@ -6737,5 +6739,59 @@
   "title": "3210 - 75 Queens Wharf Road",
   "unit_type": "Condo Apartment",
   "url": "https://condos.ca/toronto/quartz-spectra-75-queens-wharf-rd-85-queens-wharf-rd/unit-3210-C14176782"
+ },
+ {
+  "address": "- 629 KING STREET W, Toronto (Waterfront Communities), ON, M5V1M5",
+  "also_on": [],
+  "available": null,
+  "available_text": null,
+  "bathrooms": 1.0,
+  "bedrooms": "1",
+  "description": "Stunning, bright and modern 1 bedroom, 1 bathroom suite at the highly sought-after Thompson Residences, ideally situated in the heart of King West. This beautifully designed suite features an open-concept layout, contemporary finishes and a sleek modern kitchen, offering the perfect blend of style and functionality. Enjoy hotel-inspired living with access to exceptional amenities, including the iconic rooftop pool and bar at Lavelle, fully equipped fitness centre and more. Located in Toronto's vibrant Fashion District, just steps to some of the city's best restaurants, bars, cafés and nightlife. Conveniently close to the Financial District, Entertainment District, Rogers Centre, TTC and waterfront. Experience the best of downtown living in one of King West's most desirable addresses! (id:24493)\n\nMLS® #C14172032 \n\nThe trademarks MLS®, Multiple Listing Service® and the associated logos are owned by The Canadian Real Estate Association (CREA) and identify the quality of services provided by real estate professionals who are members of CREA",
+  "flags": [
+   "🌳 outdoor space"
+  ],
+  "furnished": null,
+  "lat": 43.64397,
+  "lon": -79.4015,
+  "photo": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/67/672692c6-7cfc-4fca-bac4-3b41918a860c?rule=kijijica-200-jpg",
+  "posted": "2026-11-13T10:12:01.000Z",
+  "price": 2100,
+  "score": 2.2,
+  "sent_at": null,
+  "source": "kijiji",
+  "source_id": "1746121247",
+  "sqft": null,
+  "tier": 3,
+  "title": "520 - 629 KING STREET W Toronto (Waterfront Communities), Ontari",
+  "unit_type": null,
+  "url": "https://www.kijiji.ca/v-apartments-condos/city-of-toronto/520-629-king-street-w-toronto-waterfront-communities-ontari/1746121247"
+ },
+ {
+  "address": "55 Lisgar Street, Toronto, ON, M6J 3X6",
+  "also_on": [],
+  "available": null,
+  "available_text": null,
+  "bathrooms": 1.0,
+  "bedrooms": "2",
+  "description": "TWO MONTHS FREE*! CALL NOW!*Terms and conditions apply. Applies to 1 and 2-bedroom suites, and 2 + Den suites.\nA great home, a great lifestyle.Marquee offers the perfect combo of lifestyle and comfort. Located in the heart of West Queen West, apartments are beautifully finished, with hardwood throughout and balconies that overlook an active neighbourhood. This rental community is surrounded by Toronto's trendiest. Boutique hotels like The Drake and The Gladstone make the scene with dining, lounges and music venues that bring out Toronto's A-list scenesters. From fashion and dining to tattoos, patios, galleries and back-alley graffiti, Marquee is a great home that comes with a fabulous lifestyle.\nNeighbourhoodThe Marquee is located in an established friendly residential neighbourhood. Here is a location with everything you need. Right in the centre of the movie and TV production district. Full of fine shopping, pleasant bistros and beautiful art. King St., Exhibition Place and Ontario Place are only a few blocks south towards the lakefront. Miles of trails and parklands extend along the waterfront to the east and the west. In terms of transportation, the streetcar is steps from the door, while the University subway is just a short 5 minute ride down Queen St. The GO Exhibition station is conveniently nearby, and the Gardiner Expressway is a moment's drive from the building.\nLocation Details\n\nConveniently located in West Queen West! Everything is right outside your doorstep to make life wonderful!\n\nUtilities Included\nHeat\nWater\nProperty Amenities\nVideo surveillance\nKeyless entry\nElevators\nOn-site staff\nLaundry facilities\nFitness room\nConvenience store\nBicycle room\nPublic transit\nShopping nearby\nParks nearby\nSchools nearby\nSecurity patrols\nOn-site management office\nSuite Amenities\nFridge\nStove\nBalconies\nCeramic floors\nHardwood floors\nCity views\nSecured entrances\nControlled Access\nKijiji features: balcony",
+  "flags": [
+   "🌳 outdoor space"
+  ],
+  "furnished": false,
+  "lat": 43.64266,
+  "lon": -79.42323,
+  "photo": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/e4/e4cc5f72-34f0-4364-b691-e9ff049a7efa?rule=kijijica-200-jpg",
+  "posted": "2026-11-13T09:08:55.000Z",
+  "price": 2300,
+  "score": 3.0,
+  "sent_at": null,
+  "source": "kijiji",
+  "source_id": "1716657308",
+  "sqft": null,
+  "tier": 3,
+  "title": "The Marquee in Queen West Village - 2 Bedroom Apartment for Rent",
+  "unit_type": "apartment",
+  "url": "https://www.kijiji.ca/v-apartments-condos/city-of-toronto/the-marquee-in-queen-west-village-2-bedroom-apartment-for-rent/1716657308"
  }
 ]
