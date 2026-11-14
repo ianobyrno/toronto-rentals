@@ -7751,5 +7751,33 @@
   "title": "1805 - 33 Lombard Street",
   "unit_type": "Condo Apartment",
   "url": "https://condos.ca/toronto/spire-33-lombard-st/unit-1805-C14180626"
+ },
+ {
+  "address": "5507 - 252 Church Street",
+  "also_on": [],
+  "available": "2027-01-01",
+  "available_text": null,
+  "bathrooms": 1.0,
+  "bedrooms": null,
+  "description": "Condo Apartment. Outdoor space: Balcony, Patio. High-Rise. Pets: No",
+  "flags": [
+   "🌳 outdoor space",
+   "bedrooms unknown"
+  ],
+  "furnished": false,
+  "lat": 43.6561199,
+  "lon": -79.3773071,
+  "photo": "https://cdn.repliers.io/IMG-C14180976_e52e2bd6ac7b7ca9efe4d59a95fe1d0f4fedb7d2e7859a35b897b4110d65cd71.jpg",
+  "posted": "2026-11-14",
+  "price": 1900,
+  "score": 2.4,
+  "sent_at": null,
+  "source": "condos.ca",
+  "source_id": "C14180976",
+  "sqft": null,
+  "tier": 2,
+  "title": "5507 - 252 Church Street",
+  "unit_type": "Condo Apartment",
+  "url": "https://condos.ca/toronto/252-church-252-church-st/unit-5507-C14180976"
  }
 ]
