@@ -7558,5 +7558,32 @@
   "title": "601 - 889 BAY STREET Toronto (Bay Street Corridor), Ontario",
   "unit_type": null,
   "url": "https://www.kijiji.ca/v-apartments-condos/city-of-toronto/601-889-bay-street-toronto-bay-street-corridor-ontario/1744839342"
+ },
+ {
+  "address": "PARKING P4 #126 - 11 ST JOSEPH STREET, Toronto (Bay Street Corridor), ON, M4Y3G4",
+  "also_on": [],
+  "available": null,
+  "available_text": null,
+  "bathrooms": 1.0,
+  "bedrooms": "studio",
+  "description": "Parking Spot For Lease Exclusively to Current Unit Owners. (id:24493)\n\nMLS® #C14152632 \n\nThe trademarks MLS®, Multiple Listing Service® and the associated logos are owned by The Canadian Real Estate Association (CREA) and identify the quality of services provided by real estate professionals who are members of CREA",
+  "flags": [
+   "⚠ $175 is suspiciously cheap — likely scam"
+  ],
+  "furnished": null,
+  "lat": 43.66574,
+  "lon": -79.38613,
+  "photo": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/d5/d5049f64-7dc7-49bf-b847-5b4c04038711?rule=kijijica-200-jpg",
+  "posted": "2026-11-14T10:00:00.000Z",
+  "price": 175,
+  "score": -2.88,
+  "sent_at": null,
+  "source": "kijiji",
+  "source_id": "1746167579",
+  "sqft": null,
+  "tier": 3,
+  "title": "PARKING P4 #126 - 11 ST JOSEPH STREET Toronto (Bay Street Corrid",
+  "unit_type": null,
+  "url": "https://www.kijiji.ca/v-apartments-condos/city-of-toronto/parking-p4-126-11-st-joseph-street-toronto-bay-street-corrid/1746167579"
  }
 ]
